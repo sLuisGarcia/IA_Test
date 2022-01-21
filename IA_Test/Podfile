@@ -1,0 +1,13 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+
+target 'IA_Test' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for IA_Test
+  pod 'Alamofire'
+  pod 'RxSwift'
+  pod 'RxAlamofire', '5.1'
+
+end
