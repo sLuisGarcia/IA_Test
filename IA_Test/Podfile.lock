@@ -1,5 +1,21 @@
 PODS:
   - Alamofire (4.9.1)
+  - FacebookCore (0.9.0):
+    - FBSDKCoreKit (~> 5.0)
+  - FacebookShare (0.9.0):
+    - FacebookCore (~> 0.9.0)
+    - FBSDKCoreKit (~> 5.0)
+    - FBSDKShareKit (~> 5.0)
+  - FBSDKCoreKit (5.15.1):
+    - FBSDKCoreKit/Basics (= 5.15.1)
+    - FBSDKCoreKit/Core (= 5.15.1)
+  - FBSDKCoreKit/Basics (5.15.1)
+  - FBSDKCoreKit/Core (5.15.1):
+    - FBSDKCoreKit/Basics
+  - FBSDKShareKit (5.15.1):
+    - FBSDKShareKit/Share (= 5.15.1)
+  - FBSDKShareKit/Share (5.15.1):
+    - FBSDKCoreKit (~> 5.0)
   - JVFloatLabeledTextField (1.2.2)
   - lottie-ios (3.2.3)
   - RxAlamofire (5.1.0):
@@ -11,6 +27,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - FacebookShare
   - JVFloatLabeledTextField
   - lottie-ios
   - RxAlamofire (= 5.1)
@@ -19,6 +36,10 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - FacebookCore
+    - FacebookShare
+    - FBSDKCoreKit
+    - FBSDKShareKit
     - JVFloatLabeledTextField
     - lottie-ios
     - RxAlamofire
@@ -26,11 +47,15 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  FacebookCore: ba86524b66cfa86d0f8e65d08faa8504a9f732dd
+  FacebookShare: 85968ad1b1606c4944fb154924e425fd29184ea5
+  FBSDKCoreKit: 1d5acf7c9d7a2f92bb1a242dc60cae5b7adb91df
+  FBSDKShareKit: 259737eab3cc807087374553abdf588b3096ba55
   JVFloatLabeledTextField: df48598472ee015701d509f43e59492a0d4ca208
   lottie-ios: c058aeafa76daa4cf64d773554bccc8385d0150e
   RxAlamofire: a2d7621de4c23a0c6e7b476b504acc32838ee341
   RxSwift: 915abbdfb62214aa89ccd0b194d44fb478019b27
 
-PODFILE CHECKSUM: 9941a1b4985b838593e6cdc03d1ebae48a98350d
+PODFILE CHECKSUM: 2793b25f99dd3ea952d0fb793f06c025e3393f5d
 
 COCOAPODS: 1.11.0

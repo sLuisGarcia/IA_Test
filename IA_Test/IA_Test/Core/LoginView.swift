@@ -25,8 +25,8 @@ class LoginView: UIView {
         txt.textField.floatingLabelActiveTextColor = AppColors.baseGray
         txt.textField.placeholderColor = AppColors.baseGray
         txt.textField.floatingLabelYPadding = 5
-        txt.textField.keyboardType = .asciiCapable
-        txt.backgroundColor = .clear
+        txt.textField.keyboardType = .emailAddress
+        txt.textField.backgroundColor = AppColors.white
         return txt
     }()
     
@@ -38,7 +38,7 @@ class LoginView: UIView {
         txt.textField.placeholderColor = AppColors.baseGray
         txt.textField.floatingLabelYPadding = 5
         txt.textField.keyboardType = .asciiCapable
-        txt.backgroundColor = .clear
+        txt.textField.backgroundColor = AppColors.white
         txt.textField.isSecureTextEntry = true
         return txt
     }()

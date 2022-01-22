@@ -32,12 +32,14 @@ class AppNavBar: UIView {
         let img = UIImageView(frame: .zero)
         img.image = UIImage(named: "user")
         img.contentMode = .scaleAspectFit
+        img.isUserInteractionEnabled = true
         return img
     }()
     private let img2: UIImageView = {
         let img = UIImageView(frame: .zero)
         img.image = UIImage(named: "movies")
         img.contentMode = .scaleAspectFit
+        img.isUserInteractionEnabled = true
         return img
     }()
     private let stackImg: UIStackView = {
@@ -51,22 +53,22 @@ class AppNavBar: UIView {
     
     private let lbl1: UILabel = {
         let lbl = UILabel(frame: .zero)
-        lbl.font = AppUtils.font(.regular, 12)
-        lbl.textColor = AppColors.darkBlue
+        lbl.font = AppUtils.font(.bold, 12)
         lbl.textAlignment = .center
+        lbl.isUserInteractionEnabled = true
         return lbl
     }()
     private let lbl2: UILabel = {
         let lbl = UILabel(frame: .zero)
-        lbl.font = AppUtils.font(.regular, 12)
-        lbl.textColor = AppColors.darkGray
+        lbl.font = AppUtils.font(.bold, 12)
         lbl.textAlignment = .center
+        lbl.isUserInteractionEnabled = true
         return lbl
     }()
     
     private let item1: UIView = {
         let view = UIView(frame: .zero)
-        view.backgroundColor = .clear
+        view.backgroundColor = AppColors.baseBlue
         return view
     }()
     private let item2: UIView = {
@@ -79,7 +81,7 @@ class AppNavBar: UIView {
         stack.axis = .horizontal
         stack.alignment = .fill
         stack.distribution = .fillEqually
-        stack.spacing = 8
+        stack.spacing = 0
         return stack
     }()
     
@@ -105,14 +107,14 @@ class AppNavBar: UIView {
     internal func initViews() {
         addSubview(topNavbar)
         addSubview(bottomNavbar)
+        stackItem.addArrangedSubview(item1)
+        stackItem.addArrangedSubview(item2)
+        addSubview(stackItem)
         stackImg.addArrangedSubview(img1)
         stackImg.addArrangedSubview(img2)
         addSubview(stackImg)
         addSubview(lbl1)
         addSubview(lbl2)
-        stackItem.addArrangedSubview(item1)
-        stackItem.addArrangedSubview(item2)
-        addSubview(stackItem)
     }
     
     // MARK: - Add Strings
@@ -150,17 +152,21 @@ class AppNavBar: UIView {
             lbl2.topAnchor.constraint(equalTo: stackImg.bottomAnchor, constant: AppConstraints.paddingZero),
             lbl2.centerXAnchor.constraint(equalTo: img2.centerXAnchor),
             
-            stackItem.topAnchor.constraint(equalTo: bottomNavbar.topAnchor, constant: AppConstraints.padding8),
-            stackItem.leadingAnchor.constraint(equalTo: leadingAnchor, constant: AppConstraints.padding16),
-            stackItem.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -AppConstraints.padding16),
-            stackItem.bottomAnchor.constraint(equalTo: bottomNavbar.bottomAnchor, constant: -AppConstraints.padding8)
+            stackItem.topAnchor.constraint(equalTo: bottomNavbar.topAnchor, constant: AppConstraints.paddingZero),
+            stackItem.leadingAnchor.constraint(equalTo: leadingAnchor, constant: AppConstraints.paddingZero),
+            stackItem.trailingAnchor.constraint(equalTo: trailingAnchor, constant: AppConstraints.paddingZero),
+            stackItem.bottomAnchor.constraint(equalTo: bottomNavbar.bottomAnchor, constant: -AppConstraints.paddingZero)
         ])
     }
     
     // MARK: - Add Listeners
     internal func initListeners() {
         self.item1.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(selectProfile)))
+        self.img1.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(selectProfile)))
+        self.lbl1.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(selectProfile)))
         self.item2.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(selectCartelera)))
+        self.img2.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(selectCartelera)))
+        self.lbl2.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(selectCartelera)))
     }
 }
 
@@ -175,12 +181,20 @@ extension AppNavBar {
     }
 
     func configureBar(_ index: Int) {
-        self.lbl1.textColor = AppColors.darkGray
-        self.lbl2.textColor = AppColors.darkGray
+        self.item1.backgroundColor = .clear
+        self.img1.tintColor = AppColors.baseGray
+        self.lbl1.textColor = AppColors.baseGray
+        self.item2.backgroundColor = .clear
+        self.img2.tintColor = AppColors.baseGray
+        self.lbl2.textColor = AppColors.baseGray
         if index == 0 {
-            self.lbl1.textColor = AppColors.darkBlue
+            self.item1.backgroundColor = AppColors.baseBlue
+            self.img1.tintColor = AppColors.white
+            self.lbl1.textColor = AppColors.white
         } else{
-            self.lbl2.textColor = AppColors.darkBlue
+            self.item2.backgroundColor = AppColors.baseBlue
+            self.img2.tintColor = AppColors.white
+            self.lbl2.textColor = AppColors.white
         }
     }
 }

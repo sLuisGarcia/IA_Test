@@ -11,5 +11,6 @@ target 'IA_Test' do
   pod 'RxAlamofire', '5.1'
   pod 'JVFloatLabeledTextField'
   pod 'lottie-ios'
+  pod 'FacebookShare'
 
 end

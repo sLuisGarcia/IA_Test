@@ -32,7 +32,6 @@ class TextFieldLabel: UIView {
     internal func initUI() {
         addSubview(textField)
         self.textField.translatesAutoresizingMaskIntoConstraints = false
-//        self.textField.addTarget(self, action: #selector(self.textFieldDidChange(_:)), for: UIControl.Event.editingChanged)
         NSLayoutConstraint.activate([
             textField.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 0),
             textField.trailingAnchor.constraint(equalTo: trailingAnchor, constant: 0),

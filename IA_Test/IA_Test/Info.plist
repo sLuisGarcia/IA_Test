@@ -9,6 +9,10 @@
 	</dict>
 	<key>ROOT_URL</key>
 	<string>https://stage-api.cinepolis.com/</string>
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+            <string>fbauth2</string>
+    </array>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Poppins-Bold.otf</string>

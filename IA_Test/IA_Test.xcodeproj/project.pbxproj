@@ -41,7 +41,6 @@
 		E9FBC328279BACB700BB6EFA /* NavBarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FBC327279BACB700BB6EFA /* NavBarHelper.swift */; };
 		E9FBC32A279BBBB800BB6EFA /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FBC329279BBBB800BB6EFA /* DetailView.swift */; };
 		E9FBC32C279BC11200BB6EFA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FBC32B279BC11200BB6EFA /* DetailViewController.swift */; };
-		E9FBC32E279BC72A00BB6EFA /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FBC32D279BC72A00BB6EFA /* PlayerView.swift */; };
 		E9FBC330279BDF9500BB6EFA /* loader.json in Resources */ = {isa = PBXBuildFile; fileRef = E9FBC32F279BDF9500BB6EFA /* loader.json */; };
 		E9FBC332279BDFA800BB6EFA /* AppLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FBC331279BDFA800BB6EFA /* AppLoader.swift */; };
 		E9FBC334279BDFC200BB6EFA /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FBC333279BDFC200BB6EFA /* LoaderView.swift */; };
@@ -84,7 +83,6 @@
 		E9FBC327279BACB700BB6EFA /* NavBarHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarHelper.swift; sourceTree = "<group>"; };
 		E9FBC329279BBBB800BB6EFA /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		E9FBC32B279BC11200BB6EFA /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		E9FBC32D279BC72A00BB6EFA /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
 		E9FBC32F279BDF9500BB6EFA /* loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loader.json; sourceTree = "<group>"; };
 		E9FBC331279BDFA800BB6EFA /* AppLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLoader.swift; sourceTree = "<group>"; };
 		E9FBC333279BDFC200BB6EFA /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
@@ -203,7 +201,6 @@
 				E9FBC311279B6BD800BB6EFA /* ButtonPrimary.swift */,
 				E9FBC31B279B796A00BB6EFA /* AppNavBar.swift */,
 				E9FBC325279BA89700BB6EFA /* MovieCell.swift */,
-				E9FBC32D279BC72A00BB6EFA /* PlayerView.swift */,
 				E9FBC331279BDFA800BB6EFA /* AppLoader.swift */,
 				E9FBC333279BDFC200BB6EFA /* LoaderView.swift */,
 			);
@@ -296,7 +293,6 @@
 				E9FBC326279BA89700BB6EFA /* MovieCell.swift in Sources */,
 				E9FBC31A279B72E900BB6EFA /* AppManager.swift in Sources */,
 				E9FBC322279BA24700BB6EFA /* MoviesView.swift in Sources */,
-				E9FBC32E279BC72A00BB6EFA /* PlayerView.swift in Sources */,
 				E9FBC307279B652E00BB6EFA /* TextFieldLabel.swift in Sources */,
 				E9FBC2F3279B598E00BB6EFA /* ApiMovies.swift in Sources */,
 				E9FBC302279B5BCB00BB6EFA /* Request.swift in Sources */,

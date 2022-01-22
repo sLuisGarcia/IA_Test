@@ -59,18 +59,6 @@ class ProfileView: UIView {
         return navbar
     }()
     
-//    private let txtUsernmae: TextFieldLabel = {
-//        let txt = TextFieldLabel(frame: .zero)
-//        txt.textField.setPlaceholder("Usuario", floatingTitle: "Usuario")
-//        txt.textField.floatingLabelTextColor = AppColors.baseGray
-//        txt.textField.floatingLabelActiveTextColor = AppColors.baseGray
-//        txt.textField.placeholderColor = AppColors.baseGray
-//        txt.textField.floatingLabelYPadding = 5
-//        txt.textField.keyboardType = .asciiCapable
-//        txt.backgroundColor = .clear
-//        return txt
-//    }()
-    
     // MARK: - Override Methods
     init(frame: CGRect, delegate: ProfileViewDelegate, userInfo: UserInfoResponse) {
         self.delegate = delegate

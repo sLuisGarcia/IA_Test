@@ -15,12 +15,6 @@ protocol MoviesViewDelegate: AnyObject {
 
 class MoviesView: UIView {
     
-    // MARK: - View Constraints
-    enum Constraints {
-//        static let paddingtitle: CGFloat = 40
-//        static let heightTitle: CGFloat = 60
-    }
-    
     // MARK: - Variable declaration
     private weak var delegate: MoviesViewDelegate?
     private let movies: MoviesResponse
@@ -70,7 +64,6 @@ class MoviesView: UIView {
         addSubview(lblProfile)
         let layout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 0, left: 5, bottom: 10, right: 5)
-//        layout.itemSize = CGSize(width: 100, height: 100)
         let colView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         self.collectionView = colView
         addSubview(collectionView)
@@ -80,8 +73,6 @@ class MoviesView: UIView {
     // MARK: - Add Strings
     internal func initStrings() {
         self.lblProfile.text = "Perfil"
-        
-        
         self.appNavBar.configureBar(1)
     }
     

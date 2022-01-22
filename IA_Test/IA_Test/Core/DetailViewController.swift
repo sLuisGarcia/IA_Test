@@ -7,6 +7,7 @@
 
 import UIKit
 import AVKit
+import FBSDKShareKit
 
 class DetailViewController: UIViewController {
 
@@ -65,13 +66,28 @@ class DetailViewController: UIViewController {
 }
 
 // MARK: - View Methods
-extension DetailViewController: DetailViewDelegate {
+extension DetailViewController: DetailViewDelegate, SharingDelegate {
+    func sharer(_ sharer: Sharing, didCompleteWithResults results: [String : Any]) {
+        //
+    }
+    
+    func sharer(_ sharer: Sharing, didFailWithError error: Error) {
+        //
+    }
+    
+    func sharerDidCancel(_ sharer: Sharing) {
+        //
+    }
+    
     func returnView() {
         self.navigationController?.popViewController(animated: true)
     }
     
     func share() {
-        //
+        let shareContent = ShareLinkContent()
+        shareContent.contentURL = URL.init(string: self.mp4Path)!
+        shareContent.quote = "Text to be shared"
+        ShareDialog(fromViewController: self, content: shareContent, delegate: self).show()
     }
 }
 

@@ -41,7 +41,6 @@ public class NetworkServiceImpl: NetworkService {
     }()
     private let configuration: ServiceConfig
     private let encodeUtils: EncodeUtils
-//    private let appManager = AppManager()
     
     required init(configuration: ServiceConfig, encodeUtils: EncodeUtils = EncodeUtils()) {
         self.configuration = configuration
