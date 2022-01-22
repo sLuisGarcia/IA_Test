@@ -9,5 +9,7 @@ target 'IA_Test' do
   pod 'Alamofire'
   pod 'RxSwift'
   pod 'RxAlamofire', '5.1'
+  pod 'JVFloatLabeledTextField'
+  pod 'lottie-ios'
 
 end

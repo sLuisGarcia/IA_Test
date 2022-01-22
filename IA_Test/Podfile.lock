@@ -1,5 +1,7 @@
 PODS:
   - Alamofire (4.9.1)
+  - JVFloatLabeledTextField (1.2.2)
+  - lottie-ios (3.2.3)
   - RxAlamofire (5.1.0):
     - RxAlamofire/Core (= 5.1.0)
   - RxAlamofire/Core (5.1.0):
@@ -9,20 +11,26 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - JVFloatLabeledTextField
+  - lottie-ios
   - RxAlamofire (= 5.1)
   - RxSwift
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - JVFloatLabeledTextField
+    - lottie-ios
     - RxAlamofire
     - RxSwift
 
 SPEC CHECKSUMS:
   Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  JVFloatLabeledTextField: df48598472ee015701d509f43e59492a0d4ca208
+  lottie-ios: c058aeafa76daa4cf64d773554bccc8385d0150e
   RxAlamofire: a2d7621de4c23a0c6e7b476b504acc32838ee341
   RxSwift: 915abbdfb62214aa89ccd0b194d44fb478019b27
 
-PODFILE CHECKSUM: 278caf533aeb48c3680b37fbd9d3df7c8ec59c8d
+PODFILE CHECKSUM: 9941a1b4985b838593e6cdc03d1ebae48a98350d
 
 COCOAPODS: 1.11.0

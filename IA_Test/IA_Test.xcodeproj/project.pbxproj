@@ -8,22 +8,86 @@
 
 /* Begin PBXBuildFile section */
 		E9FBC2D6279B53B100BB6EFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FBC2D5279B53B100BB6EFA /* AppDelegate.swift */; };
-		E9FBC2D8279B53B100BB6EFA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FBC2D7279B53B100BB6EFA /* SceneDelegate.swift */; };
-		E9FBC2DA279B53B100BB6EFA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FBC2D9279B53B100BB6EFA /* ViewController.swift */; };
 		E9FBC2DD279B53B100BB6EFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9FBC2DB279B53B100BB6EFA /* Main.storyboard */; };
 		E9FBC2DF279B53B300BB6EFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9FBC2DE279B53B300BB6EFA /* Assets.xcassets */; };
 		E9FBC2E2279B53B300BB6EFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9FBC2E0279B53B300BB6EFA /* LaunchScreen.storyboard */; };
+		E9FBC2EB279B54DF00BB6EFA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FBC2EA279B54DF00BB6EFA /* LoginView.swift */; };
+		E9FBC2ED279B54E900BB6EFA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FBC2EC279B54E900BB6EFA /* LoginViewController.swift */; };
+		E9FBC2F0279B568C00BB6EFA /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FBC2EF279B568C00BB6EFA /* ViewControllerFactory.swift */; };
+		E9FBC2F3279B598E00BB6EFA /* ApiMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FBC2F2279B598E00BB6EFA /* ApiMovies.swift */; };
+		E9FBC2F6279B59FA00BB6EFA /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FBC2F5279B59FA00BB6EFA /* Login.swift */; };
+		E9FBC2F8279B5A1800BB6EFA /* Initable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FBC2F7279B5A1800BB6EFA /* Initable.swift */; };
+		E9FBC2FA279B5A6B00BB6EFA /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FBC2F9279B5A6B00BB6EFA /* NetworkService.swift */; };
+		E9FBC2FC279B5AA200BB6EFA /* ServiceConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FBC2FB279B5AA200BB6EFA /* ServiceConfig.swift */; };
+		E9FBC2FE279B5AC000BB6EFA /* Enviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FBC2FD279B5AC000BB6EFA /* Enviroment.swift */; };
+		E9FBC300279B5AF300BB6EFA /* EncodeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FBC2FF279B5AF300BB6EFA /* EncodeUtils.swift */; };
+		E9FBC302279B5BCB00BB6EFA /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FBC301279B5BCB00BB6EFA /* Request.swift */; };
+		E9FBC304279B5D4D00BB6EFA /* HeaderFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FBC303279B5D4D00BB6EFA /* HeaderFactory.swift */; };
+		E9FBC307279B652E00BB6EFA /* TextFieldLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FBC306279B652E00BB6EFA /* TextFieldLabel.swift */; };
+		E9FBC309279B676300BB6EFA /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FBC308279B676300BB6EFA /* AppConstants.swift */; };
+		E9FBC30B279B680F00BB6EFA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FBC30A279B680F00BB6EFA /* Extensions.swift */; };
+		E9FBC30F279B693D00BB6EFA /* Poppins-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = E9FBC30D279B693D00BB6EFA /* Poppins-Regular.otf */; };
+		E9FBC310279B693D00BB6EFA /* Poppins-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E9FBC30E279B693D00BB6EFA /* Poppins-Bold.otf */; };
+		E9FBC312279B6BD800BB6EFA /* ButtonPrimary.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FBC311279B6BD800BB6EFA /* ButtonPrimary.swift */; };
+		E9FBC314279B6F6C00BB6EFA /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FBC313279B6F6C00BB6EFA /* ProfileView.swift */; };
+		E9FBC316279B70E800BB6EFA /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FBC315279B70E800BB6EFA /* ProfileViewController.swift */; };
+		E9FBC318279B722400BB6EFA /* UserInfoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FBC317279B722400BB6EFA /* UserInfoResponse.swift */; };
+		E9FBC31A279B72E900BB6EFA /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FBC319279B72E900BB6EFA /* AppManager.swift */; };
+		E9FBC31C279B796A00BB6EFA /* AppNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FBC31B279B796A00BB6EFA /* AppNavBar.swift */; };
+		E9FBC31E279B9A5900BB6EFA /* MoviesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FBC31D279B9A5800BB6EFA /* MoviesResponse.swift */; };
+		E9FBC322279BA24700BB6EFA /* MoviesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FBC321279BA24700BB6EFA /* MoviesView.swift */; };
+		E9FBC324279BA48900BB6EFA /* MoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FBC323279BA48900BB6EFA /* MoviesViewController.swift */; };
+		E9FBC326279BA89700BB6EFA /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FBC325279BA89700BB6EFA /* MovieCell.swift */; };
+		E9FBC328279BACB700BB6EFA /* NavBarHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FBC327279BACB700BB6EFA /* NavBarHelper.swift */; };
+		E9FBC32A279BBBB800BB6EFA /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FBC329279BBBB800BB6EFA /* DetailView.swift */; };
+		E9FBC32C279BC11200BB6EFA /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FBC32B279BC11200BB6EFA /* DetailViewController.swift */; };
+		E9FBC32E279BC72A00BB6EFA /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FBC32D279BC72A00BB6EFA /* PlayerView.swift */; };
+		E9FBC330279BDF9500BB6EFA /* loader.json in Resources */ = {isa = PBXBuildFile; fileRef = E9FBC32F279BDF9500BB6EFA /* loader.json */; };
+		E9FBC332279BDFA800BB6EFA /* AppLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FBC331279BDFA800BB6EFA /* AppLoader.swift */; };
+		E9FBC334279BDFC200BB6EFA /* LoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FBC333279BDFC200BB6EFA /* LoaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E9FBC2D2279B53B100BB6EFA /* IA_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IA_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9FBC2D5279B53B100BB6EFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E9FBC2D7279B53B100BB6EFA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E9FBC2D9279B53B100BB6EFA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		E9FBC2DC279B53B100BB6EFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E9FBC2DE279B53B300BB6EFA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E9FBC2E1279B53B300BB6EFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E9FBC2E3279B53B300BB6EFA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E9FBC2EA279B54DF00BB6EFA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		E9FBC2EC279B54E900BB6EFA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E9FBC2EF279B568C00BB6EFA /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		E9FBC2F2279B598E00BB6EFA /* ApiMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiMovies.swift; sourceTree = "<group>"; };
+		E9FBC2F5279B59FA00BB6EFA /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		E9FBC2F7279B5A1800BB6EFA /* Initable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Initable.swift; sourceTree = "<group>"; };
+		E9FBC2F9279B5A6B00BB6EFA /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		E9FBC2FB279B5AA200BB6EFA /* ServiceConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceConfig.swift; sourceTree = "<group>"; };
+		E9FBC2FD279B5AC000BB6EFA /* Enviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enviroment.swift; sourceTree = "<group>"; };
+		E9FBC2FF279B5AF300BB6EFA /* EncodeUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodeUtils.swift; sourceTree = "<group>"; };
+		E9FBC301279B5BCB00BB6EFA /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		E9FBC303279B5D4D00BB6EFA /* HeaderFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderFactory.swift; sourceTree = "<group>"; };
+		E9FBC306279B652E00BB6EFA /* TextFieldLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldLabel.swift; sourceTree = "<group>"; };
+		E9FBC308279B676300BB6EFA /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		E9FBC30A279B680F00BB6EFA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E9FBC30D279B693D00BB6EFA /* Poppins-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Regular.otf"; sourceTree = "<group>"; };
+		E9FBC30E279B693D00BB6EFA /* Poppins-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Poppins-Bold.otf"; sourceTree = "<group>"; };
+		E9FBC311279B6BD800BB6EFA /* ButtonPrimary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonPrimary.swift; sourceTree = "<group>"; };
+		E9FBC313279B6F6C00BB6EFA /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		E9FBC315279B70E800BB6EFA /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		E9FBC317279B722400BB6EFA /* UserInfoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoResponse.swift; sourceTree = "<group>"; };
+		E9FBC319279B72E900BB6EFA /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		E9FBC31B279B796A00BB6EFA /* AppNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavBar.swift; sourceTree = "<group>"; };
+		E9FBC31D279B9A5800BB6EFA /* MoviesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesResponse.swift; sourceTree = "<group>"; };
+		E9FBC321279BA24700BB6EFA /* MoviesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesView.swift; sourceTree = "<group>"; };
+		E9FBC323279BA48900BB6EFA /* MoviesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesViewController.swift; sourceTree = "<group>"; };
+		E9FBC325279BA89700BB6EFA /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		E9FBC327279BACB700BB6EFA /* NavBarHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarHelper.swift; sourceTree = "<group>"; };
+		E9FBC329279BBBB800BB6EFA /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		E9FBC32B279BC11200BB6EFA /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E9FBC32D279BC72A00BB6EFA /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		E9FBC32F279BDF9500BB6EFA /* loader.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loader.json; sourceTree = "<group>"; };
+		E9FBC331279BDFA800BB6EFA /* AppLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLoader.swift; sourceTree = "<group>"; };
+		E9FBC333279BDFC200BB6EFA /* LoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,11 +101,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		61D72537361088833CA09668 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E9FBC2C9279B53B100BB6EFA = {
 			isa = PBXGroup;
 			children = (
 				E9FBC2D4279B53B100BB6EFA /* IA_Test */,
+				E9FBC30C279B691100BB6EFA /* Fonts */,
 				E9FBC2D3279B53B100BB6EFA /* Products */,
+				61D72537361088833CA09668 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +129,94 @@
 		E9FBC2D4279B53B100BB6EFA /* IA_Test */ = {
 			isa = PBXGroup;
 			children = (
+				E9FBC2F1279B595C00BB6EFA /* Services */,
+				E9FBC305279B651F00BB6EFA /* Common */,
+				E9FBC2E9279B54D000BB6EFA /* Core */,
+				E9FBC2EE279B567A00BB6EFA /* Helpers */,
 				E9FBC2D5279B53B100BB6EFA /* AppDelegate.swift */,
-				E9FBC2D7279B53B100BB6EFA /* SceneDelegate.swift */,
-				E9FBC2D9279B53B100BB6EFA /* ViewController.swift */,
 				E9FBC2DB279B53B100BB6EFA /* Main.storyboard */,
 				E9FBC2DE279B53B300BB6EFA /* Assets.xcassets */,
 				E9FBC2E0279B53B300BB6EFA /* LaunchScreen.storyboard */,
 				E9FBC2E3279B53B300BB6EFA /* Info.plist */,
 			);
 			path = IA_Test;
+			sourceTree = "<group>";
+		};
+		E9FBC2E9279B54D000BB6EFA /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				E9FBC2EA279B54DF00BB6EFA /* LoginView.swift */,
+				E9FBC2EC279B54E900BB6EFA /* LoginViewController.swift */,
+				E9FBC313279B6F6C00BB6EFA /* ProfileView.swift */,
+				E9FBC315279B70E800BB6EFA /* ProfileViewController.swift */,
+				E9FBC321279BA24700BB6EFA /* MoviesView.swift */,
+				E9FBC323279BA48900BB6EFA /* MoviesViewController.swift */,
+				E9FBC329279BBBB800BB6EFA /* DetailView.swift */,
+				E9FBC32B279BC11200BB6EFA /* DetailViewController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		E9FBC2EE279B567A00BB6EFA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E9FBC2EF279B568C00BB6EFA /* ViewControllerFactory.swift */,
+				E9FBC308279B676300BB6EFA /* AppConstants.swift */,
+				E9FBC30A279B680F00BB6EFA /* Extensions.swift */,
+				E9FBC319279B72E900BB6EFA /* AppManager.swift */,
+				E9FBC327279BACB700BB6EFA /* NavBarHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E9FBC2F1279B595C00BB6EFA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E9FBC2F4279B59F000BB6EFA /* Models */,
+				E9FBC2F2279B598E00BB6EFA /* ApiMovies.swift */,
+				E9FBC2F9279B5A6B00BB6EFA /* NetworkService.swift */,
+				E9FBC2FB279B5AA200BB6EFA /* ServiceConfig.swift */,
+				E9FBC2FD279B5AC000BB6EFA /* Enviroment.swift */,
+				E9FBC2FF279B5AF300BB6EFA /* EncodeUtils.swift */,
+				E9FBC303279B5D4D00BB6EFA /* HeaderFactory.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E9FBC2F4279B59F000BB6EFA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E9FBC2F7279B5A1800BB6EFA /* Initable.swift */,
+				E9FBC301279B5BCB00BB6EFA /* Request.swift */,
+				E9FBC2F5279B59FA00BB6EFA /* Login.swift */,
+				E9FBC317279B722400BB6EFA /* UserInfoResponse.swift */,
+				E9FBC31D279B9A5800BB6EFA /* MoviesResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E9FBC305279B651F00BB6EFA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E9FBC32F279BDF9500BB6EFA /* loader.json */,
+				E9FBC306279B652E00BB6EFA /* TextFieldLabel.swift */,
+				E9FBC311279B6BD800BB6EFA /* ButtonPrimary.swift */,
+				E9FBC31B279B796A00BB6EFA /* AppNavBar.swift */,
+				E9FBC325279BA89700BB6EFA /* MovieCell.swift */,
+				E9FBC32D279BC72A00BB6EFA /* PlayerView.swift */,
+				E9FBC331279BDFA800BB6EFA /* AppLoader.swift */,
+				E9FBC333279BDFC200BB6EFA /* LoaderView.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E9FBC30C279B691100BB6EFA /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E9FBC30E279B693D00BB6EFA /* Poppins-Bold.otf */,
+				E9FBC30D279B693D00BB6EFA /* Poppins-Regular.otf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +277,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9FBC330279BDF9500BB6EFA /* loader.json in Resources */,
 				E9FBC2E2279B53B300BB6EFA /* LaunchScreen.storyboard in Resources */,
 				E9FBC2DF279B53B300BB6EFA /* Assets.xcassets in Resources */,
+				E9FBC310279B693D00BB6EFA /* Poppins-Bold.otf in Resources */,
+				E9FBC30F279B693D00BB6EFA /* Poppins-Regular.otf in Resources */,
 				E9FBC2DD279B53B100BB6EFA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +293,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9FBC2DA279B53B100BB6EFA /* ViewController.swift in Sources */,
+				E9FBC326279BA89700BB6EFA /* MovieCell.swift in Sources */,
+				E9FBC31A279B72E900BB6EFA /* AppManager.swift in Sources */,
+				E9FBC322279BA24700BB6EFA /* MoviesView.swift in Sources */,
+				E9FBC32E279BC72A00BB6EFA /* PlayerView.swift in Sources */,
+				E9FBC307279B652E00BB6EFA /* TextFieldLabel.swift in Sources */,
+				E9FBC2F3279B598E00BB6EFA /* ApiMovies.swift in Sources */,
+				E9FBC302279B5BCB00BB6EFA /* Request.swift in Sources */,
+				E9FBC2FC279B5AA200BB6EFA /* ServiceConfig.swift in Sources */,
+				E9FBC309279B676300BB6EFA /* AppConstants.swift in Sources */,
+				E9FBC2FE279B5AC000BB6EFA /* Enviroment.swift in Sources */,
+				E9FBC32C279BC11200BB6EFA /* DetailViewController.swift in Sources */,
+				E9FBC2ED279B54E900BB6EFA /* LoginViewController.swift in Sources */,
+				E9FBC312279B6BD800BB6EFA /* ButtonPrimary.swift in Sources */,
+				E9FBC300279B5AF300BB6EFA /* EncodeUtils.swift in Sources */,
+				E9FBC324279BA48900BB6EFA /* MoviesViewController.swift in Sources */,
+				E9FBC316279B70E800BB6EFA /* ProfileViewController.swift in Sources */,
+				E9FBC2FA279B5A6B00BB6EFA /* NetworkService.swift in Sources */,
+				E9FBC314279B6F6C00BB6EFA /* ProfileView.swift in Sources */,
+				E9FBC304279B5D4D00BB6EFA /* HeaderFactory.swift in Sources */,
+				E9FBC32A279BBBB800BB6EFA /* DetailView.swift in Sources */,
+				E9FBC2F0279B568C00BB6EFA /* ViewControllerFactory.swift in Sources */,
+				E9FBC31C279B796A00BB6EFA /* AppNavBar.swift in Sources */,
+				E9FBC332279BDFA800BB6EFA /* AppLoader.swift in Sources */,
+				E9FBC30B279B680F00BB6EFA /* Extensions.swift in Sources */,
+				E9FBC328279BACB700BB6EFA /* NavBarHelper.swift in Sources */,
+				E9FBC31E279B9A5900BB6EFA /* MoviesResponse.swift in Sources */,
+				E9FBC2F8279B5A1800BB6EFA /* Initable.swift in Sources */,
+				E9FBC2F6279B59FA00BB6EFA /* Login.swift in Sources */,
+				E9FBC2EB279B54DF00BB6EFA /* LoginView.swift in Sources */,
+				E9FBC334279BDFC200BB6EFA /* LoaderView.swift in Sources */,
 				E9FBC2D6279B53B100BB6EFA /* AppDelegate.swift in Sources */,
-				E9FBC2D8279B53B100BB6EFA /* SceneDelegate.swift in Sources */,
+				E9FBC318279B722400BB6EFA /* UserInfoResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
