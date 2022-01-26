@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E9F1B20027A1E1330007D606 /* Transactions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F1B1FF27A1E1330007D606 /* Transactions.swift */; };
+		E9F1B20227A1E5E80007D606 /* TransactionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F1B20127A1E5E80007D606 /* TransactionView.swift */; };
+		E9F1B20427A1E6B50007D606 /* TransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9F1B20327A1E6B50007D606 /* TransactionViewController.swift */; };
 		E9FBC2D6279B53B100BB6EFA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9FBC2D5279B53B100BB6EFA /* AppDelegate.swift */; };
 		E9FBC2DD279B53B100BB6EFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9FBC2DB279B53B100BB6EFA /* Main.storyboard */; };
 		E9FBC2DF279B53B300BB6EFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9FBC2DE279B53B300BB6EFA /* Assets.xcassets */; };
@@ -47,6 +50,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E9F1B1FF27A1E1330007D606 /* Transactions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transactions.swift; sourceTree = "<group>"; };
+		E9F1B20127A1E5E80007D606 /* TransactionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionView.swift; sourceTree = "<group>"; };
+		E9F1B20327A1E6B50007D606 /* TransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewController.swift; sourceTree = "<group>"; };
 		E9FBC2D2279B53B100BB6EFA /* IA_Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IA_Test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9FBC2D5279B53B100BB6EFA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E9FBC2DC279B53B100BB6EFA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -151,6 +157,8 @@
 				E9FBC323279BA48900BB6EFA /* MoviesViewController.swift */,
 				E9FBC329279BBBB800BB6EFA /* DetailView.swift */,
 				E9FBC32B279BC11200BB6EFA /* DetailViewController.swift */,
+				E9F1B20127A1E5E80007D606 /* TransactionView.swift */,
+				E9F1B20327A1E6B50007D606 /* TransactionViewController.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -189,6 +197,7 @@
 				E9FBC2F5279B59FA00BB6EFA /* Login.swift */,
 				E9FBC317279B722400BB6EFA /* UserInfoResponse.swift */,
 				E9FBC31D279B9A5800BB6EFA /* MoviesResponse.swift */,
+				E9F1B1FF27A1E1330007D606 /* Transactions.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -295,7 +304,9 @@
 				E9FBC322279BA24700BB6EFA /* MoviesView.swift in Sources */,
 				E9FBC307279B652E00BB6EFA /* TextFieldLabel.swift in Sources */,
 				E9FBC2F3279B598E00BB6EFA /* ApiMovies.swift in Sources */,
+				E9F1B20227A1E5E80007D606 /* TransactionView.swift in Sources */,
 				E9FBC302279B5BCB00BB6EFA /* Request.swift in Sources */,
+				E9F1B20027A1E1330007D606 /* Transactions.swift in Sources */,
 				E9FBC2FC279B5AA200BB6EFA /* ServiceConfig.swift in Sources */,
 				E9FBC309279B676300BB6EFA /* AppConstants.swift in Sources */,
 				E9FBC2FE279B5AC000BB6EFA /* Enviroment.swift in Sources */,
@@ -319,6 +330,7 @@
 				E9FBC2F6279B59FA00BB6EFA /* Login.swift in Sources */,
 				E9FBC2EB279B54DF00BB6EFA /* LoginView.swift in Sources */,
 				E9FBC334279BDFC200BB6EFA /* LoaderView.swift in Sources */,
+				E9F1B20427A1E6B50007D606 /* TransactionViewController.swift in Sources */,
 				E9FBC2D6279B53B100BB6EFA /* AppDelegate.swift in Sources */,
 				E9FBC318279B722400BB6EFA /* UserInfoResponse.swift in Sources */,
 			);

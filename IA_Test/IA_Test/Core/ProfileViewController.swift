@@ -57,6 +57,17 @@ class ProfileViewController: UIViewController {
 
 // MARK: - View Methods
 extension ProfileViewController: ProfileViewDelegate {
+    func showDetail() {
+        self.appLoader?.isLoading()
+        self.apiMovies.getTransactions { response in
+            self.appLoader?.dismiss()
+            let view = TransactionViewController(transactions: response)
+            self.present(view, animated: true, completion: nil)
+        } failure: { error in
+            self.showError()
+        }
+    }
+    
     func nextTab(_ index: Int) {
         if index != 0 {
             self.appLoader?.isLoading()
@@ -64,9 +75,13 @@ extension ProfileViewController: ProfileViewDelegate {
                 self.appLoader?.dismiss()
                 self.navigationController?.pushViewController(view, animated: true)
             } failure: { error in
-                self.appLoader?.dismiss()
-                self.appManager.showAlert(self, "ALERTA", "Ocurrió un error al realizar la petición. Intenta de nuevo", "Entendido")
+                self.showError()
             }
         }
+    }
+    
+    private func showError() {
+        self.appLoader?.dismiss()
+        self.appManager.showAlert(self, "ALERTA", "Ocurrió un error al realizar la petición. Intenta de nuevo", "Entendido")
     }
 }

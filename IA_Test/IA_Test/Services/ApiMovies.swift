@@ -12,6 +12,7 @@ protocol ApiMovies {
     func getLogin(_ username: String, _ password: String, success: @escaping (LoginResponse) -> Void, failure: @escaping (Error) -> Void)
     func getUserInfo(success: @escaping (UserInfoResponse) -> Void, failure: @escaping (Error) -> Void)
     func getMovies(success: @escaping (MoviesResponse) -> Void, failure: @escaping (Error) -> Void)
+    func getTransactions(success: @escaping (TransactionsResponse) -> Void, failure: @escaping (Error) -> Void)
 }
 
 
@@ -54,6 +55,21 @@ class ApiMoviesImpl: ApiMovies {
                               encoding: JSONEncoding.default,
                               headers: HeaderFactory.getBaseHeaders())
         networkService.execute(request).subscribe(onNext: { (response: MoviesResponse) in
+            success(response)
+        }, onError: { (error: Error) in
+            failure(error)
+        }).disposed(by: disposeBag)
+    }
+    
+    func getTransactions(success: @escaping (TransactionsResponse) -> Void, failure: @escaping (Error) -> Void) {
+        let transactionReq = TransactionsRequest("1303030763820961", "4804", "MX", true)
+        let params = transactionReq.dictionary ?? [:]
+        let request = Request(method: .post,
+                              path: "v2/members/loyalty",
+                              parameters: params,
+                              encoding: JSONEncoding.default,
+                              headers: HeaderFactory.getBaseHeaders())
+        networkService.execute(request).subscribe(onNext: { (response: TransactionsResponse) in
             success(response)
         }, onError: { (error: Error) in
             failure(error)

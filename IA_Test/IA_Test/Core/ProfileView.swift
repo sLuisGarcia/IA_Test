@@ -9,6 +9,7 @@ import UIKit
 
 // MARK: - View Delegate
 protocol ProfileViewDelegate: AnyObject {
+    func showDetail()
     func nextTab(_ index: Int)
 }
 
@@ -54,6 +55,11 @@ class ProfileView: UIView {
         return lbl
     }()
     
+    private let btnTransaction: ButtonPrimary = {
+        let btn = ButtonPrimary(frame: .zero)
+        return btn
+    }()
+    
     private let appNavBar: AppNavBar = {
         let navbar = AppNavBar(frame: .zero)
         return navbar
@@ -86,6 +92,7 @@ class ProfileView: UIView {
         addSubview(lblUsername)
         addSubview(lblEmail)
         addSubview(lblCardNumber)
+        addSubview(btnTransaction)
         addSubview(appNavBar)
     }
     
@@ -120,6 +127,7 @@ class ProfileView: UIView {
         ])
         attrStr.addAttribute(NSAttributedString.Key.foregroundColor, value: AppColors.darkGray, range: range)
         self.lblCardNumber.attributedText = attrStr
+        self.btnTransaction.setButtonStyle("Obtener más información", .regular)
         self.appNavBar.configureBar(0)
     }
     
@@ -156,6 +164,8 @@ class ProfileView: UIView {
         self.lblUsername.translatesAutoresizingMaskIntoConstraints = false
         self.lblEmail.translatesAutoresizingMaskIntoConstraints = false
         self.lblCardNumber.translatesAutoresizingMaskIntoConstraints = false
+        self.btnTransaction.translatesAutoresizingMaskIntoConstraints = false
+        self.btnTransaction.delegate = self
         let heightUser = AppUtils.heightForView(text: lblUsername.text ?? "",
                                                 font: lblUsername.font,
                                                 width: self.frame.width - 32)
@@ -173,6 +183,12 @@ class ProfileView: UIView {
             lblCardNumber.topAnchor.constraint(equalTo: lblEmail.bottomAnchor, constant: AppConstraints.padding16),
             lblCardNumber.leadingAnchor.constraint(equalTo: leadingAnchor, constant: AppConstraints.padding16),
             lblCardNumber.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -AppConstraints.padding16),
+            lblCardNumber.heightAnchor.constraint(equalToConstant: heightUser),
+            
+            btnTransaction.topAnchor.constraint(equalTo: lblCardNumber.bottomAnchor, constant: AppConstraints.padding16),
+            btnTransaction.leadingAnchor.constraint(equalTo: leadingAnchor, constant: AppConstraints.padding16),
+            btnTransaction.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -AppConstraints.padding16),
+            btnTransaction.heightAnchor.constraint(equalToConstant: AppConstraints.heightButton)
         ])
     }
     
@@ -189,9 +205,11 @@ class ProfileView: UIView {
 }
 
 
-// MARK: - View Methods
-extension LoginView {
-    
+// MARK: - Button Primary Method
+extension ProfileView: ButtonPrimaryDelegate {
+    func didClickButton(index: Int) {
+        self.delegate?.showDetail()
+    }
 }
 
 // MARK: - Nab bar Methods
